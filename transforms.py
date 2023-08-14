@@ -3,11 +3,12 @@ transformations.py
 Modded from johnschidt42 off of Github
 
 '''
-from typing import Callable, Tuple
+from typing import List, Callable, Tuple
 import numpy as np
+import skimage
 from skimage.util import img_as_ubyte
 from skimage.util import crop
-
+import random
 
 def normalize(inp: np.ndarray):
     """Squash image input to the value range [0, 1] (no clipping)"""
@@ -23,44 +24,24 @@ def create_dense_target(tar: np.ndarray):
 
     return dummy
 
+# guassian smoothing
+def gaussian_smoothing(inp:np.array,sigma_val: int = 1):
+  smooth_array = skimage.filters.gaussian(inp, sigma=sigma_val)
+  return smooth_array
+  
+def image_histogram_equalization(image: np.array, number_bins: int = 256):
+    # from http://www.janeriksolem.net/histogram-equalization-with-python-and.html
 
-def center_crop_to_size(x: np.ndarray,
-                        size: Tuple,
-                        copy: bool = False,
-                        ) -> np.ndarray:
-    """
-    Center crops a given array x to the size passed in the function.
-    Expects even spatial dimensions!
-    """
-    x_shape = np.array(x.shape)
-    size = np.array(size)
-    params_list = ((x_shape - size) / 2).astype(np.int).tolist()
-    params_tuple = tuple([(i, i) for i in params_list])
-    cropped_image = crop(x, crop_width=params_tuple, copy=copy)
-    return cropped_image
+    # get image histogram
+    image_histogram, bins = np.histogram(image.flatten(), number_bins, density=True)
+    cdf = image_histogram.cumsum() # cumulative distribution function
+    cdf = (number_bins-1) * cdf / cdf[-1] # normalize
 
+    # use linear interpolation of cdf to find new pixel values
+    image_equalized = np.interp(image.flatten(), bins[:-1], cdf)
 
-def re_normalize(inp: np.ndarray,
-                 low: int = 0,
-                 high: int = 255
-                 ):
-    """Normalize the data to a certain range. Default: [0-255]"""
-    inp_out = img_as_ubyte(inp)
-    return inp_out
-
-
-def random_flip(inp: np.ndarray, tar: np.ndarray, ndim_spatial: int):
-    flip_dims = [np.random.randint(low=0, high=2) for dim in range(ndim_spatial)]
-
-    flip_dims_inp = tuple([i + 1 for i, element in enumerate(flip_dims) if element == 1])
-    flip_dims_tar = tuple([i for i, element in enumerate(flip_dims) if element == 1])
-
-    inp_flipped = np.flip(inp, axis=flip_dims_inp)
-    tar_flipped = np.flip(tar, axis=flip_dims_tar)
-
-    return inp_flipped, tar_flipped
-
-
+    return image_equalized.reshape(image.shape)#, cdf
+  
 class Repr:
     """Evaluable string representation of an object"""
 
@@ -90,3 +71,29 @@ class FunctionWrapperDouble(Repr):
         if self.input: inp = self.function(inp)
         if self.target: tar = self.function(tar)
         return inp, tar
+
+class Compose:
+    """Baseclass - composes several transforms together."""
+
+    def __init__(self, transforms: List[Callable]):
+        self.transforms = transforms
+
+    def __repr__(self): return str([transform for transform in self.transforms])
+
+
+class ComposeDouble(Compose):
+    """Composes transforms for input-target pairs."""
+
+    def __call__(self, inp: np.ndarray, target: dict):
+        for t in self.transforms:
+            inp, target = t(inp, target)
+        return inp, target
+
+
+class ComposeSingle(Compose):
+    """Composes transforms for input only."""
+
+    def __call__(self, inp: np.ndarray):
+        for t in self.transforms:
+            inp = t(inp)
+        return inp
