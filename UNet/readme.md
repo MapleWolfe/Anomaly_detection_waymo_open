@@ -15,4 +15,4 @@ For preprocessing the data and some other helper functions
 
 ## The Visualization 
 Resulted from the unet_v2 notebook is an altair based visualization on Loss results from hyperparameter tuning. Results should be similar to:
-[[]]
+![tuning results](hyperparameter_tuning_2.png)
