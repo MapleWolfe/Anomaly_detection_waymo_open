@@ -30,3 +30,10 @@ Loading data from the parquet files, the image data is transformed into input in
 
 The current model trained and operational in the Deployed Models folder is trained on 43 parquets of data out of the overall 1000. Our ideal model would be training on all 1000 parquets, but this is estimated to take about 166 hours (roughly 7 days). (This is assuming a base run of the lowest GPU offered with the Google Colab subscription without paying for extra compute units.) If a higher GPU were enabled, the time would be halved. 
 
+## Model Edits versus a Baseline
+What do we mean by this? I mean the changes we've made from a typical U-Net model to best fit our data needs.
+
+One example is that we implement dynamic classes in our model training, as when working with the Waymo and other real world data, we don't have a set number of classes segmented per image. Also, their is a number of unidentified segmented results that causes the classes to be higher then normally anticipated per the Waymo documentation.
+Another thing to note is that we enable packages and use methods that target low-memory use. For instance, we utilize mixed-precision training and the use of a cuda environment.
+
+
