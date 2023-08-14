@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/app.css' />
+  </head>
+  <body>
+    <h1>Waymo Anomaly Detection Demo</h1>
+    
+ 
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" >
+        <input type="submit" value="Submit">
+    </form>
+  <br>
+  <p style="color:green;">File uploaded successfully</p>
+  
+  <br>
+  <img src= "{{user_image}}" width="450" height="350">
+
+  <br>
+  <br>
+  <br>
+  
+  <form action="/show_seg" target="_blank">
+        <input type="submit" value="Display Segmentation Result" />
+    </form>
+  </body>
+</html>
