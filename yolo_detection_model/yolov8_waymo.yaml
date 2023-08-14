@@ -1,0 +1,11 @@
+train: ../train/images
+val: ../eval/images
+test: #
+
+# Classes
+names:
+  0: unknown
+  1: vehicle
+  2: pedestrian
+  3: sign
+  4: cyclist
