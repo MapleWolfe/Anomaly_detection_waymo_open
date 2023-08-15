@@ -1,12 +1,12 @@
 # Yolo Model Creation
 This folder focuses on development of a YOLO (You only look once) model. specifically we are going to be using YOLOv8. the architecture for YOLOV8 focuses on targets observed in the WAYMO open data set, more specifically it targets the five annoted label objects:
-
+0: undefined
 1: vehicle
 2: pedestrian
 3: sign
 4: cyclist
 
-Yolo effectively identifies and locates objects within the image and creates bounding boxes on them (the model doesn't directly plot it gives their coordinates). it also provides class labels of the detected object, in our case one of the above 4 or 'undefined' if it can't identify the model. the **yolov8_waymo.yaml** is that we built contains the list of classes. 
+Yolo effectively identifies and locates objects within the image and creates bounding boxes on them (the model doesn't directly plot it gives their coordinates). it also provides class labels of the detected object, in our case one of the above 5. the **yolov8_waymo.yaml** is that we built contains the list of classes. 
 
 Instructions to operate Notebook:
   1. to run a sample of the notebok please use google colab (this is the development enviornment of the notebook)
