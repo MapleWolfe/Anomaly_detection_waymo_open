@@ -59,4 +59,13 @@ At this time, the dashboard isn't fully implemented with the appropiate model pi
 
 ### Important Attribution
 
+\n @software{yolov8_ultralytics,
+\n author = {Glenn Jocher and Ayush Chaurasia and Jing Qiu},
+\n title = {Ultralytics YOLOv8},
+\n version = {8.0.0},
+\n year = {2023},
+\n url = {https://github.com/ultralytics/ultralytics},
+\n orcid = {0000-0001-5950-6979, 0000-0002-7603-6750, 0000-0003-3783-7069},
+\n license = {AGPL-3.0}
+}
 
