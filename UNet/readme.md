@@ -22,6 +22,7 @@ For preprocessing the data and some other helper functions
 ## The Visualization 
 Resulted from the unet_v2 notebook is an altair based visualization on Loss results from hyperparameter tuning. Results should be similar to:
 ![tuning results](hyperparameter_tuning_2.png)
+![loss results](model_train.png)
 
 ## How the notebook operates
 The primary focus of data gathering per the unet_v2 notebook is from the Google Cloud Storage, as a transfer of data between Waymo perception data buckets to personal buckets was necessary (considering the size of the training data alone is 1 TB large). An alternative for local use is involved, primarily in the case of example parquet files.
