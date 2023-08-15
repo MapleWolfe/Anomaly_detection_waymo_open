@@ -17,8 +17,6 @@ Instructions to operate Notebook:
   4. the first cell also  allows you to decide the number of files to download and work with from GCS for train and validation               respectively.
   5. please review the installs and imports section of the notebook to uncomment and install the libraries or to uncomment and install       using detect_model_requirements.txt
 
-Notebook H
-
 ** Kindly ensure ** to maintain the original file structure if using data from waymo_sample_data for things to run smoothly. or maintain the file structure from the original waymo data.
 
 The yolo v8 model architecture was a part of the Ultralytics library. the library is released on AGPL 3.0. as requested by the author please review the below citation for the model architecture that was used in this folder:
