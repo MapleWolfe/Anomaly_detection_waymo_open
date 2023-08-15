@@ -18,7 +18,7 @@ Instructions to operate Notebook:
 
 Notebook H
 
-*** Kindly ensure** to maintain the original file structure if using data from waymo_sample_data for things to run smoothly. or maintain the file structure from the original waymo data.
+** Kindly ensure ** to maintain the original file structure if using data from waymo_sample_data for things to run smoothly. or maintain the file structure from the original waymo data.
 
 The yolo v8 model architecture was a part of the Ultralytics library. the library is released on AGPL 3.0. as requested by the author please review the below citation for the model architecture that was used in this folder:
 
