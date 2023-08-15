@@ -22,4 +22,4 @@ Notebook H
 
 The yolo v8 model architecture was a part of the Ultralytics library. the library is released on AGPL 3.0. as requested by the author please review the below citation for the model architecture that was used in this folder:
 
-<img width="1230" alt="yolo_v8_attribution" src="[https://github.com/MapleWolfe/Anomaly_detection_waymo_open/assets/127186753/cadbc6ae-4f81-43d6-a03c-ec4cc46fef33](https://github.com/MapleWolfe/Anomaly_detection_waymo_open/edit/main/yolo_detection_model/)https://github.com/MapleWolfe/Anomaly_detection_waymo_open/edit/main/yolo_detection_model/yolo_v8_attribution.png">
+<img width="1230" alt="yolo_v8_attribution" src="https://github.com/MapleWolfe/Anomaly_detection_waymo_open/edit/main/yolo_detection_model/yolo_v8_attribution.png">
