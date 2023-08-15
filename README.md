@@ -53,6 +53,10 @@ At this time, the dashboard isn't fully implemented with the appropiate model pi
 | Title | Description | Link |
 |-------|-------------|--------|
 | Waymo | Location of Data | https://waymo.com/ | 
-| YOLOv8 | Documentaiton of YOLO model | [https://arxiv.org/abs/2207.02696](https://docs.ultralytics.com/models/yolov8/) |
+| YOLOv8 | Documentaiton of YOLO model | [yolov8 by ultralytics](https://docs.ultralytics.com/models/yolov8/) |
 | U-Net | Paper citation, introduction, and information of U-Net archetecture | https://arxiv.org/abs/1505.04597 |
 | Autoencoder for Anomalies | Inspiration for Autoencoder approach | https://www.analyticsvidhya.com/blog/2021/05/anomaly-detection-using-autoencoders-a-walk-through-in-python/ |
+
+### Important Attribution
+
+
