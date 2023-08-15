@@ -4,7 +4,11 @@ Capstone Project - Team Rouges of the Unviersity of Michigan Master's of Applied
 Completed by Jai Khandelwal, Ning Xu, and Sarah Wayward
 
 ## Accessing the Data
-Waymo's open datasets are available to those who register through their site and is generally open for use by the public, especially for those accessing for competitions or for academic use. For this project, we utilized the Waymo's Google Cloud Storage of Buckets by using Google Cloud command line actions to transfer data to personal buckets.
+Waymo's open datasets are available to those who register through their site and is generally open for use by the public, especially for those accessing for competitions or for academic use. 
+
+Their website can be found here: [WAYMO](https://waymo.com/open/)
+
+For this project, we utilized the Waymo's Google Cloud Storage of Buckets by using Google Cloud command line actions to transfer data to personal buckets.
 
 Cloud command line sample code of transferring complete training folder from waymo to our sample bucket:
 ```
@@ -29,11 +33,12 @@ Utilize U-Net model and YOLO object detection model based on the CNN deep learni
 - Image Through Semantic Segmentation U-Net Model
 <img src="/Reference_Images/" width="300">
 
+---------------------------
 ## How to use code
 1. Clone the repository.
 2. Ensure requirements match those that are mentioned. Extra downloads may include Ultralytics and Altair, as these packages are not native towards Google Colab environments. Ultralytics is for training the YOLO model, and Altair is for statistical visualizations.
 3. Model training can be done in any order with different designations of parquet quantities. We offer 1 parquet of each type required. Waymo access is required for the rest. Model training is done is **jupyter notebooks** with assisted scripts and packages. 
-5. [Insert a final step here about the pipeline]
+5. **Insert a final step here about the pipeline**
 
 ## Example of the pipeline
 With models already trained, located in the deployed_models folder, a demo notebook noted as ```Pipeline_Demo.ipynb``` with an existing demo image can be used to visualize how preprocessing images, how the models interact, and how to the end result is displayed.
