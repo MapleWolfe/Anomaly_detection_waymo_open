@@ -9,8 +9,6 @@ We aim to develop a model specifically tailored for autonomous driving scenarios
 ## Pipeline
 Utilize U-Net model and YOLO object detection model based on the CNN deep learning algorithms, in combination with an Autoencoder, to identify anomalies in complex open source Waymo dataset. This innovative approach allows us to achieve accurate anomaly detection and localization within real-world scenarios in a 2D space.
 
-[ Add some images of Final results]
-
 -------------------------------------------------------------------------------------------------------------------
 
 ### Important Links
