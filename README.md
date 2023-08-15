@@ -4,7 +4,7 @@ Capstone Project - Team Rouges of the Unviersity of Michigan Master's of Applied
 Completed by Jai Khandelwal, Ning Xu, and Sarah Wayward
 
 ## Accessing the Data
-Waymo's open datasets are available to those who register through their site and is generally open for use by the public, especially for those accessing for competitions or for academic use. 
+Waymo's open datasets are available to those who register through their site and is generally open for use by the public, especially for those accessing for competitions or for academic use. they have their custom license for their data but it allows usage for academic projects and allows for reasonably small amounts of it's  data  to be published to support these projects.
 
 Their website can be found here: [WAYMO](https://waymo.com/open/)
 
@@ -59,13 +59,19 @@ At this time, the dashboard isn't fully implemented with the appropiate model pi
 
 ### Important Attribution
 
-\n @software{yolov8_ultralytics,
-\n author = {Glenn Jocher and Ayush Chaurasia and Jing Qiu},
-\n title = {Ultralytics YOLOv8},
-\n version = {8.0.0},
-\n year = {2023},
-\n url = {https://github.com/ultralytics/ultralytics},
-\n orcid = {0000-0001-5950-6979, 0000-0002-7603-6750, 0000-0003-3783-7069},
-\n license = {AGPL-3.0}
+@software{yolov8_ultralytics,
+
+author = {Glenn Jocher and Ayush Chaurasia and Jing Qiu},
+
+title = {Ultralytics YOLOv8},
+
+version = {8.0.0},
+
+year = {2023},
+
+url = {https://github.com/ultralytics/ultralytics},
+
+orcid = {0000-0001-5950-6979, 0000-0002-7603-6750, 0000-0003-3783-7069},
+icense = {AGPL-3.0}
 }
 
