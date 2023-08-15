@@ -12,7 +12,7 @@ For this project, we utilized the Waymo's Google Cloud Storage of Buckets by usi
 
 Cloud command line sample code of transferring complete training folder from waymo to our sample bucket:
 ```
-gsutil -m cp -r gs://waymo_open_dataset_v_2_0_0/training gs://waymo_sample_bucket/training
+gsutil -m cp -r gs://waymo_open_dataset_v_2_0_0/training gs://waymo_sample_bucket
 ```
 
 ## Introduction
