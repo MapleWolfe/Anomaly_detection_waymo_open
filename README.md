@@ -17,6 +17,18 @@ We aim to develop a model specifically tailored for autonomous driving scenarios
 ## Pipeline
 Utilize U-Net model and YOLO object detection model based on the CNN deep learning algorithms, in combination with an Autoencoder, to identify anomalies in complex open source Waymo dataset. This innovative approach allows us to achieve accurate anomaly detection and localization within real-world scenarios in a 2D space.
 
+- Initial Image
+<img src="/Reference_Images/test.jpg" width="300">
+
+- Image Through Object Detection YOLO Model
+<img src="/Reference_Images/download.png" width="300">
+
+- Image Through Anomaly Detection AutoEncoder Model
+<img src="/Reference_Images/" width="300">
+
+- Image Through Semantic Segmentation U-Net Model
+<img src="/Reference_Images/" width="300">
+
 ## How to use code
 1. Clone the repository.
 2. Ensure requirements match those that are mentioned. Extra downloads may include Ultralytics and Altair, as these packages are not native towards Google Colab environments. Ultralytics is for training the YOLO model, and Altair is for statistical visualizations.
