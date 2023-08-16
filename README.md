@@ -38,7 +38,7 @@ Utilize U-Net model and YOLO object detection model based on the CNN deep learni
 1. Clone the repository.
 2. Ensure requirements match those that are mentioned. Extra downloads may include Ultralytics and Altair, as these packages are not native towards Google Colab environments. Ultralytics is for training the YOLO model, and Altair is for statistical visualizations.
 3. Model training can be done in any order with different designations of parquet quantities. We offer 1 parquet of each type required. Waymo access is required for the rest. Model training is done is **jupyter notebooks** with assisted scripts and packages. 
-5. **Insert a final step here about the pipeline**
+4. In depth usage per model is involved in their corresponding readme files.
 
 ## Example of the pipeline
 With models already trained, located in the deployed_models folder, a demo notebook noted as ```Pipeline_Demo.ipynb``` with an existing demo image can be used to visualize how preprocessing images, how the models interact, and how to the end result is displayed.
