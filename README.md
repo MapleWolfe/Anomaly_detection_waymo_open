@@ -28,10 +28,10 @@ Utilize U-Net model and YOLO object detection model based on the CNN deep learni
 <img src="/Reference_Images/download.png" width="300">
 
 - Image Through Anomaly Detection AutoEncoder Model
-<img src="/Reference_Images/" width="300">
+<img src="/Reference_Images/download (1).png" width="300">
 
 - Image Through Semantic Segmentation U-Net Model
-<img src="/Reference_Images/" width="300">
+<img src="/Reference_Images/seg.png" width="300">
 
 ---------------------------
 ## How to use code
