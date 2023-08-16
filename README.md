@@ -8,6 +8,8 @@ Waymo's open datasets are available to those who register through their site and
 
 Their website can be found here: [WAYMO](https://waymo.com/open/)
 
+once you arrive at their website kindly sign up to access the data. there is no cost or restrictions to sign up. once you do, kindly go to download, scroll to perception dataset, click on 'here' link for v2.0.0, March 2023
+
 For this project, we utilized the Waymo's Google Cloud Storage of Buckets by using Google Cloud command line actions to transfer data to personal buckets.
 
 Cloud command line sample code of transferring complete training folder from waymo to our sample bucket:
