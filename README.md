@@ -3,6 +3,9 @@ Capstone Project - Team Rouges of the Unviersity of Michigan Master's of Applied
 
 Completed by Jai Khandelwal, Ning Xu, and Sarah Wayward
 
+## Summary Poster
+![Anomaly Detection - Waymo](https://github.com/MapleWolfe/Anomaly_detection_waymo_open/assets/127186753/cefe168d-6703-4481-a813-31cfec87bb90)
+
 ## Accessing the Data
 Waymo's open datasets are available to those who register through their site and is generally open for use by the public, especially for those accessing for competitions or for academic use. they have their custom license for their data but it allows usage for academic projects and allows for reasonably small amounts of it's  data  to be published to support these projects.
 
